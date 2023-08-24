@@ -1,0 +1,15 @@
+.list-group.top-nav {
+    flex-direction: row;
+}
+
+.small-text {
+    font-size: 13px;
+}
+
+.bg-wctc-primary {
+    background-color: #003E7A;
+}
+
+.karla-font {
+    font-family: 'Karla', sans-serif;
+}
