@@ -1,5 +1,38 @@
+body {
+    margin: 0;
+}
+
+.header-image {
+    display: flex;
+    min-height: 315px;
+    background-image: url("https://www.wctc.edu/_site-images/foundation-students-in-lobby-h.jpg");
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+}
+
+.header-text {
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.2em;
+    color: #003e7a;
+    margin-top: 0;
+    margin-bottom: 0.6em;
+}
+
+@media screen and (min-width: 1200px) {
+    .header-text {
+        font-size: 60px;
+    }
+}
+
 .list-group.top-nav {
     flex-direction: row;
+}
+
+.container-header {
+    border-bottom: 3px solid #003e7a;
 }
 
 .small-text {
@@ -10,6 +43,60 @@
     background-color: #003E7A;
 }
 
+.text-wctc-primary {
+    color: #003E7A;
+}
+
 .karla-font {
     font-family: 'Karla', sans-serif;
+}
+
+.link-basic {
+    text-decoration: none;
+    color: white;
+}
+.link-basic:hover {
+
+}
+
+.container-nav {
+    margin: 0;
+    margin-top: -17px;
+    padding: 0;
+}
+
+.navbar-link {
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.navbar-link:hover {
+    -webkit-box-shadow: inset 0px -8px 0px 0px rgba(0,61,122,1);
+    -moz-box-shadow: inset 0px -8px 0px 0px rgba(0,61,122,1);
+    box-shadow: inset 0px -8px 0px 0px rgba(0,61,122,1);
+}
+
+.nav-list {
+    align-self: end;
+    height: 100px;
+}
+
+.navbar-link-text {
+    outline: 0;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.navbar-link-text-separator {
+    border-right: 1px black solid;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; /* remove the gap so it doesn't close */
+}
+
+.dropdown-menu-right {
+    right: 0 !important;
+    left: auto !important;
 }

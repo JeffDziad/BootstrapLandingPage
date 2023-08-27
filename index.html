@@ -8,28 +8,123 @@
     <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="libs/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <script type="javascript" src="libs/bootstrap.bundle.min.js"></script>
+    <script type="application/javascript" src="libs/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/3155597822.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="bg-wctc-primary w-100">
-        <div class="d-flex flex-row-reverse mb-3">
-            <div class="small-text karla-font p-2 text-white">Search</div>
-            <div class="small-text karla-font p-2 text-white">Alumni</div>
-            <div class="small-text karla-font p-2 text-white">Student Resources</div>
-            <div class="small-text karla-font p-2 text-white">MyWCTC</div>
+<header class="container-header">
+    <div class="bg-wctc-primary">
+        <div class="bg-wctc-primary container">
+            <div class="d-flex flex-row-reverse mb-3">
+                <div class="py-2 px-3 text-white">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="small-text karla-font py-2 px-3 text-white d-flex align-items-center">
+                    <a href="https://www.wctc.edu/alumni.php" class="link-basic"><span
+                            class="align-text-bottom">Alumni</span></a>
+                </div>
+                <div class="small-text karla-font py-2 px-3 text-white d-flex align-items-center">
+                    <a href="https://www.wctc.edu/quick-links.php" class="link-basic">Student Resources</a>
+                </div>
+                <div class="small-text karla-font py-2 px-3 text-white d-flex align-items-center">
+                    <a href="https://experience.elluciancloud.com/wctc/" class="link-basic">MyWCTC</a>
+                </div>
+            </div>
         </div>
     </div>
-
-
-
-    <div class="navbar w-100 py-0">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="https://www.wctc.edu/_resources/images/waukesha_logo.svg"
-                        alt="Waukesha County Technical Collage"
-                        width="250" height="84"/>
+    <div class="navbar container-nav w-100">
+        <div class="container justify-content-between">
+            <a class="navbar-brand m-0 p-0" href="#">
+                <img src="https://www.wctc.edu/_resources/images/waukesha_logo.svg" class="m-0 p-0"
+                     alt="Waukesha County Technical Collage" width="250" height="84"/>
             </a>
+
+            <ul class="list-group list-group-horizontal nav-list">
+                <li class="list-group-item p-0 border-0">
+                    <div id="academicsDropdown" class="navbar-link w-100 h-100 dropdown">
+                        <a href="https://www.wctc.edu" class="w-100 h-100 d-flex align-items-center justify-content-center text-decoration-none">
+                            <span class="karla-font text-wctc-primary nav-link-text px-2">ACADEMICS</span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="academicsDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="list-group-item p-0 border-0">
+                    <div id="admissionsDropdown" class="navbar-link w-100 h-100 dropdown">
+                        <a href="https://www.wctc.edu" class="w-100 h-100 d-flex align-items-center justify-content-center text-decoration-none">
+                            <span class="karla-font text-wctc-primary nav-link-text px-2">ADMISSIONS</span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="admissionsDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="list-group-item p-0 border-0">
+                    <div id="campuslifeDropdown" data-bs-toggle="dropdown" aria-expanded="false" data-bs-display="static" class="navbar-link w-100 h-100 dropdown">
+                        <a href="https://www.wctc.edu" class="w-100 h-100 d-flex align-items-center justify-content-center text-decoration-none">
+                            <span class="karla-font text-wctc-primary nav-link-text px-2">CAMPUS LIFE</span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="campuslifeDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="list-group-item p-0 border-0">
+                    <div id="communityDropdown" class="navbar-link w-100 h-100 dropdown">
+                        <a href="https://www.wctc.edu" class="w-100 h-100 d-flex align-items-center justify-content-center text-decoration-none">
+                            <span class="karla-font text-wctc-primary nav-link-text px-2">COMMUNITY</span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="communityDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="list-group-item p-0 border-0">
+                    <div id="aboutDropdown" class="navbar-link w-100 h-100 dropdown">
+                        <a href="https://www.wctc.edu" class="w-100 h-100 d-flex align-items-center justify-content-center text-decoration-none">
+                            <span class="karla-font text-wctc-primary nav-link-text px-2">ABOUT</span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="aboutDropdown">
+                            <li class="dropdown-item"><a href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+            </ul>
+
         </div>
     </div>
+</header>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="header-image align-items-center">
+            <div class="container karla-font text-white header-text">Career Connections</div>
+        </div>
+    </div>
+    <div class="row">
+
+
+    </div>
+
+</div>
+
 </body>
 </html>
+
+<!-- 1171 xl-->
