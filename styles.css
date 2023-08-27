@@ -39,6 +39,10 @@ body {
     font-size: 13px;
 }
 
+.indented {
+    text-indent: 10px;
+}
+
 .bg-wctc-primary {
     background-color: #003E7A;
 }
@@ -78,7 +82,7 @@ body {
 
 .nav-list {
     align-self: end;
-    height: 100px;
+    height: 80px;
 }
 
 .navbar-link-text {
@@ -99,4 +103,12 @@ body {
 .dropdown-menu-right {
     right: 0 !important;
     left: auto !important;
+}
+
+.dropdown-nav-wctc {
+    border: solid 3px #003E7A;
+}
+
+.dropdown-menu-separator {
+    border-right: 1px grey solid;
 }
