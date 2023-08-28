@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
     <script type="application/javascript" src="libs/bootstrap.bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/3155597822.js" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
 </head>
 <body>
 <header class="container-header">
@@ -32,56 +33,20 @@
             </div>
         </div>
     </div>
-    <div class="navbar container-nav w-100">
+    <div id="navigationBar" class="navbar container-nav w-100">
         <div class="container justify-content-between">
             <a class="navbar-brand m-0 p-0" href="#">
                 <img src="https://www.wctc.edu/_resources/images/waukesha_logo.svg" class="m-0 p-0"
                      alt="Waukesha County Technical Collage" width="250" height="84"/>
             </a>
 
-            <ul class="list-group list-group-horizontal nav-list">
+            <!--     Desktop Nav       -->
+            <ul class="list-group list-group-horizontal nav-list d-lg-flex">
                 <li class="list-group-item p-0 border-0">
                     <div id="academicsDropdown" class="navbar-link w-100 h-100 dropdown">
                         <a href="https://www.wctc.edu" class="w-100 h-100 d-flex align-items-center justify-content-center text-decoration-none">
                             <span class="karla-font text-wctc-primary nav-link-text px-2">ACADEMICS</span>
                         </a>
-                        <ul class="dropdown-menu rounded-0 dropdown-nav-wctc" aria-labelledby="academicsDropdown">
-                            <li>
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <a href="#" class="nav-link-option karla-font small-text text-wctc-primary fw-bolder text-decoration-none">Academic Programs</a>
-                                            <a href="#" class="nav-link-option karla-font small-text text-wctc-primary fw-bolder text-decoration-none">Academic Calendar</a>
-                                            <a href="#" class="nav-link-option karla-font small-text text-wctc-primary fw-bolder text-decoration-none">Courses, Training & Continuing Education</a>
-                                            <a href="#" class="nav-link-option karla-font small-text text-wctc-primary text-decoration-none"><p class="m-0 ms-2 p-0">Course Search</p></a>
-                                            <a href="#" class="nav-link-option karla-font small-text text-wctc-primary text-decoration-none"><p class="m-0 ms-2 p-0">Register for Courses</p></a>
-                                            <a href="#" class="nav-link-option karla-font small-text text-wctc-primary fw-bolder text-decoration-none">Graduation</a>
-                                            <a href="#" class="nav-link-option karla-font small-text text-wctc-primary fw-bolder text-decoration-none">Request a WCTC Transcript</a>
-                                        </div>
-                                        <div class="col-12">
-                                            <a href="#" class="nav-link-option karla-font small-text text-wctc-primary text-decoration-none fw-bolder">High School Dual Credit</a>
-                                            <a href="#" class="nav-link-option karla-font small-text text-wctc-primary text-decoration-none"><p class="m-0 ms-2 p-0">WCTC Excelerate</p></a>
-                                            <a href="#" class="nav-link-option karla-font small-text text-wctc-primary text-decoration-none"><p class="m-0 ms-2 p-0">Dual Enrollment Academy</p></a>
-                                            <a href="#" class="nav-link-option karla-font small-text text-wctc-primary text-decoration-none"><p class="m-0 ms-2 p-0">Start College Now</p></a>
-                                            <a href="#" class="nav-link-option karla-font small-text text-wctc-primary text-decoration-none"><p class="m-0 ms-2 p-0">Transcripted Credit & Advanced Standing</p></a>
-                                            <a href="#" class="nav-link-option karla-font small-text text-wctc-primary text-decoration-none"><p class="m-0 ms-2 p-0">Youth Apprenticeships</p></a>
-                                            <a href="#" class="nav-link-option karla-font small-text text-wctc-primary text-decoration-none fw-bolder">High School Completion</a>
-                                            <a href="#" class="nav-link-option karla-font small-text text-wctc-primary text-decoration-none fw-bolder">English as a Second Language</a>
-                                        </div>
-                                        <div class="col-12">
-                                            <a href="#" class="nav-link-option karla-font small-text text-wctc-primary text-decoration-none fw-bolder">Academic Resources</a>
-                                            <a href="#" class="nav-link-option karla-font small-text text-wctc-primary text-decoration-none"><p class="m-0 ms-2 p-0">Testing Services</p></a>
-                                            <a href="#" class="nav-link-option karla-font small-text text-wctc-primary text-decoration-none"><p class="m-0 ms-2 p-0">Academic Support</p></a>
-                                            <a href="#" class="nav-link-option karla-font small-text text-wctc-primary text-decoration-none"><p class="m-0 ms-2 p-0">Academic Advising</p></a>
-                                            <a href="#" class="nav-link-option karla-font small-text text-wctc-primary text-decoration-none"><p class="m-0 ms-2 p-0">Students with Disabilities</p></a>
-                                            <a href="#" class="nav-link-option karla-font small-text text-wctc-primary text-decoration-none"><p class="m-0 ms-2 p-0">Change Your Program</p></a>
-                                            <a href="#" class="nav-link-option karla-font small-text text-wctc-primary text-decoration-none"><p class="m-0 ms-2 p-0">Add, Drop or Withdraw from Classes</p></a>
-                                            <a href="#" class="nav-link-option karla-font small-text text-wctc-primary text-decoration-none"><p class="m-0 ms-2 p-0">Online Learning</p></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
                     </div>
                 </li>
 
@@ -90,11 +55,6 @@
                         <a href="https://www.wctc.edu" class="w-100 h-100 d-flex align-items-center justify-content-center text-decoration-none">
                             <span class="karla-font text-wctc-primary nav-link-text px-2">ADMISSIONS</span>
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="admissionsDropdown">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
                     </div>
                 </li>
 
@@ -103,11 +63,6 @@
                         <a href="https://www.wctc.edu" class="w-100 h-100 d-flex align-items-center justify-content-center text-decoration-none">
                             <span class="karla-font text-wctc-primary nav-link-text px-2">CAMPUS LIFE</span>
                         </a>
-                        <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="campuslifeDropdown">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
                     </div>
                 </li>
 
@@ -116,11 +71,6 @@
                         <a href="https://www.wctc.edu" class="w-100 h-100 d-flex align-items-center justify-content-center text-decoration-none">
                             <span class="karla-font text-wctc-primary nav-link-text px-2">COMMUNITY</span>
                         </a>
-                        <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="communityDropdown">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
                     </div>
                 </li>
 
@@ -129,19 +79,196 @@
                         <a href="https://www.wctc.edu" class="w-100 h-100 d-flex align-items-center justify-content-center text-decoration-none">
                             <span class="karla-font text-wctc-primary nav-link-text px-2">ABOUT</span>
                         </a>
-                        <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="aboutDropdown">
-                            <li class="dropdown-item"><a href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
                     </div>
                 </li>
 
             </ul>
 
+            <!--     Mobile Nav     -->
+            <div class="d-lg-none">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Dropdown
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
+
+
+
+
     </div>
 </header>
+
+<div id="academicsDropdownList" class="dropdown-list">
+    <div class="container">
+        <div class="row m-2">
+            <div class="col dropdown-menu-separator">
+                <a href="#" class="nav-link-option karla-font text-wctc-primary fw-bolder">Academic Programs</a><br>
+                <a href="#" class="nav-link-option karla-font text-wctc-primary fw-bolder">Academic Calendar</a><br>
+                <a href="#" class="nav-link-option karla-font text-wctc-primary fw-bolder">Courses, Training & Continuing Education</a>
+                <a href="#" class="nav-link-option karla-font text-wctc-primary"><p class="m-0 ms-2 p-0">Course Search</p></a>
+                <a href="#" class="nav-link-option karla-font text-wctc-primary"><p class="m-0 ms-2 p-0">Register for Courses</p></a>
+                <a href="#" class="nav-link-option karla-font text-wctc-primary fw-bolder">Graduation</a><br>
+                <a href="#" class="nav-link-option karla-font text-wctc-primary fw-bolder">Request a WCTC Transcript</a>
+            </div>
+            <div class="col dropdown-menu-separator">
+                <a href="#" class="nav-link-option karla-font text-wctc-primary fw-bolder">High School Dual Credit</a>
+                <a href="#" class="nav-link-option karla-font text-wctc-primary"><p class="m-0 ms-2 p-0">WCTC Excelerate</p></a>
+                <a href="#" class="nav-link-option karla-font text-wctc-primary"><p class="m-0 ms-2 p-0">Dual Enrollment Academy</p></a>
+                <a href="#" class="nav-link-option karla-font text-wctc-primary"><p class="m-0 ms-2 p-0">Start College Now</p></a>
+                <a href="#" class="nav-link-option karla-font text-wctc-primary"><p class="m-0 ms-2 p-0">Transcripted Credit & Advanced Standing</p></a>
+                <a href="#" class="nav-link-option karla-font text-wctc-primary"><p class="m-0 ms-2 p-0">Youth Apprenticeships</p></a>
+                <a href="#" class="nav-link-option karla-font text-wctc-primary fw-bolder">High School Completion</a><br>
+                <a href="#" class="nav-link-option karla-font text-wctc-primary fw-bolder">English as a Second Language</a>
+            </div>
+            <div class="col">
+                <a href="#" class="nav-link-option karla-font text-wctc-primary fw-bolder">Academic Resources</a>
+                <a href="#" class="nav-link-option karla-font text-wctc-primary"><p class="m-0 ms-2 p-0">Testing Services</p></a>
+                <a href="#" class="nav-link-option karla-font text-wctc-primary"><p class="m-0 ms-2 p-0">Academic Support</p></a>
+                <a href="#" class="nav-link-option karla-font text-wctc-primary"><p class="m-0 ms-2 p-0">Academic Advising</p></a>
+                <a href="#" class="nav-link-option karla-font text-wctc-primary"><p class="m-0 ms-2 p-0">Students with Disabilities</p></a>
+                <a href="#" class="nav-link-option karla-font text-wctc-primary"><p class="m-0 ms-2 p-0">Change Your Program</p></a>
+                <a href="#" class="nav-link-option karla-font text-wctc-primary"><p class="m-0 ms-2 p-0">Add, Drop or Withdraw from Classes</p></a>
+                <a href="#" class="nav-link-option karla-font text-wctc-primary"><p class="m-0 ms-2 p-0">Online Learning</p></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="admissionsDropdownList" class="dropdown-list">
+    <div class="container">
+        <div class="row m-2">
+            <div class="col dropdown-menu-separator">
+                <a href="#" class="nav-link-option karla-font text-wctc-primary fw-bolder">Apply to WCTC</a><br>
+                <a href="#" class="nav-link-option karla-font text-wctc-primary"><p class="m-0 ms-2 p-0">Next Steps After You're Accepted</p></a>
+                <a href="#" class="nav-link-option karla-font text-wctc-primary fw-bolder">Visit WCTC</a><br>
+                <a href="#" class="nav-link-option karla-font text-wctc-primary"><p class="m-0 ms-2 p-0">Open House</p></a>
+                <a href="#" class="nav-link-option karla-font text-wctc-primary"><p class="m-0 ms-2 p-0">Campus Maps</p></a>
+            </div>
+            <div class="col dropdown-menu-separator">
+                <a href="#" class="nav-link-option karla-font text-wctc-primary fw-bolder">Register for Courses</a>
+                <a href="#" class="nav-link-option karla-font text-wctc-primary fw-bolder">Tuition & Aid</a><br>
+                <a href="#" class="nav-link-option karla-font text-wctc-primary"><p class="m-0 ms-2 p-0">Financial Aid</p></a>
+                <a href="#" class="nav-link-option karla-font text-wctc-primary fw-bolder">Earning Credit for Prior Learning</a>
+                <a href="#" class="nav-link-option karla-font text-wctc-primary fw-bolder">New Student Orientation</a>
+
+            </div>
+            <div class="col">
+                <a href="#" class="nav-link-option karla-font text-wctc-primary fw-bolder">Transfer Students</a>
+                <a href="#" class="nav-link-option karla-font text-wctc-primary fw-bolder">International Students</a>
+                <a href="#" class="nav-link-option karla-font text-wctc-primary fw-bolder">Veterans</a>
+                <a href="#" class="nav-link-option karla-font text-wctc-primary fw-bolder">Students with Disabilities</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="campuslifeDropdownList" class="dropdown-list">
+    <div class="container">
+        <div class="row m-2">
+            <div class="col dropdown-menu-separator">
+                <a href="#" class="nav-link-option karla-font text-wctc-primary fw-bolder">Events Calendar</a>
+                <a href="#" class="nav-link-option karla-font text-wctc-primary fw-bolder">Bookstore</a>
+                <a href="#" class="nav-link-option karla-font text-wctc-primary fw-bolder">Library</a>
+                <a href="#" class="nav-link-option karla-font text-wctc-primary fw-bolder">Career Connections</a>
+                <a href="#" class="nav-link-option karla-font text-wctc-primary fw-bolder">Dining</a>
+            </div>
+            <div class="col dropdown-menu-separator">
+                <a href="#" class="nav-link-option karla-font text-wctc-primary fw-bolder">Wellness & Support</a>
+                <a href="#" class="nav-link-option karla-font text-wctc-primary"><p class="m-0 ms-2 p-0">Mental Health</p></a>
+                <a href="#" class="nav-link-option karla-font text-wctc-primary"><p class="m-0 ms-2 p-0">Counseling Services</p></a>
+                <a href="#" class="nav-link-option karla-font text-wctc-primary"><p class="m-0 ms-2 p-0">Fitness at WCTC</p></a>
+                <a href="#" class="nav-link-option karla-font text-wctc-primary"><p class="m-0 ms-2 p-0">Child Development Center</p></a>
+                <a href="#" class="nav-link-option karla-font text-wctc-primary fw-bolder">College Safety and Security</a>
+
+            </div>
+            <div class="col">
+                <a href="#" class="nav-link-option karla-font text-wctc-primary fw-bolder">Transfer Students</a>
+                <a href="#" class="nav-link-option karla-font text-wctc-primary"><p class="m-0 ms-2 p-0">Multicultural Engagement Center</p></a>
+                <a href="#" class="nav-link-option karla-font text-wctc-primary"><p class="m-0 ms-2 p-0">Student Clubs</p></a>
+                <a href="#" class="nav-link-option karla-font text-wctc-primary"><p class="m-0 ms-2 p-0">Student Government Association</p></a>
+                <a href="#" class="nav-link-option karla-font text-wctc-primary"><p class="m-0 ms-2 p-0">Study Abroad</p></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="communityDropdownList" class="dropdown-list">
+    <div class="container">
+        <div class="row m-2">
+            <div class="col dropdown-menu-separator">
+                <a href="#" class="nav-link-option karla-font text-wctc-primary fw-bolder">Courses, Training & Continuing Education</a>
+                <a href="#" class="nav-link-option karla-font text-wctc-primary fw-bolder">Business Resources</a>
+                <a href="#" class="nav-link-option karla-font text-wctc-primary"><p class="m-0 ms-2 p-0">Corporate Training</p></a>
+                <a href="#" class="nav-link-option karla-font text-wctc-primary"><p class="m-0 ms-2 p-0">Small Business Center</p></a>
+                <a href="#" class="nav-link-option karla-font text-wctc-primary"><p class="m-0 ms-2 p-0">Hire WCTC Talent</p></a>
+            </div>
+            <div class="col dropdown-menu-separator">
+                <a href="#" class="nav-link-option karla-font text-wctc-primary fw-bolder">Student-Provided Services</a>
+                <a href="#" class="nav-link-option karla-font text-wctc-primary"><p class="m-0 ms-2 p-0">Style & Class Salon and Spa</p></a>
+                <a href="#" class="nav-link-option karla-font text-wctc-primary"><p class="m-0 ms-2 p-0">The Classic Room & Classic Bistro</p></a>
+                <a href="#" class="nav-link-option karla-font text-wctc-primary"><p class="m-0 ms-2 p-0">Dental Hygiene Clinic</p></a>
+            </div>
+            <div class="col">
+                <a href="#" class="nav-link-option karla-font text-wctc-primary fw-bolder">Facility Rentals</a>
+                <a href="#" class="nav-link-option karla-font text-wctc-primary fw-bolder">Child Development Center</a>
+                <a href="#" class="nav-link-option karla-font text-wctc-primary fw-bolder">Learning in Retirement</a>
+                <a href="#" class="nav-link-option karla-font text-wctc-primary fw-bolder">U.S. Citizenship</a>
+                <a href="#" class="nav-link-option karla-font text-wctc-primary fw-bolder">English as a Second Language</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="aboutDropdownList" class="dropdown-list">
+    <div class="container">
+        <div class="row m-2">
+            <div class="col dropdown-menu-separator">
+                <a href="#" class="nav-link-option karla-font text-wctc-primary fw-bolder">Leadership</a>
+                <a href="#" class="nav-link-option karla-font text-wctc-primary"><p class="m-0 ms-2 p-0">District Board</p></a>
+                <a href="#" class="nav-link-option karla-font text-wctc-primary"><p class="m-0 ms-2 p-0">Diversity, Equity and Inclusion</p></a>
+                <a href="#" class="nav-link-option karla-font text-wctc-primary fw-bolder">WCTC Foundation</a>
+                <a href="#" class="nav-link-option karla-font text-wctc-primary fw-bolder">Accreditation</a>
+                <a href="#" class="nav-link-option karla-font text-wctc-primary fw-bolder">Critical Life Skills</a>
+            </div>
+            <div class="col">
+                <a href="#" class="nav-link-option karla-font text-wctc-primary fw-bolder">Institutional Effectiveness</a>
+                <a href="#" class="nav-link-option karla-font text-wctc-primary fw-bolder">Campus & Academic Policies</a>
+                <a href="#" class="nav-link-option karla-font text-wctc-primary fw-bolder">Publications</a>
+                <a href="#" class="nav-link-option karla-font text-wctc-primary"><p class="m-0 ms-2 p-0">Current Catalog</p></a>
+                <a href="#" class="nav-link-option karla-font text-wctc-primary fw-bolder">Forms</a>
+            </div>
+        </div>
+    </div>
+</div>
 
 <div class="container-fluid">
     <div class="row">

@@ -72,6 +72,7 @@ body {
 .navbar-link {
     cursor: pointer;
     transition: all 1s;
+    right: 0;
 }
 
 .navbar-link:hover {
@@ -81,10 +82,15 @@ body {
 }
 
 .nav-link-option {
+    text-decoration: none;
+}
 
+.nav-link-option:hover {
+    text-decoration: underline;
 }
 
 .nav-list {
+    display: none;
     align-self: end;
     height: 80px;
 }
@@ -110,9 +116,21 @@ body {
 }
 
 .dropdown-nav-wctc {
+    width: 100%;
     border: solid 3px #003E7A;
 }
 
 .dropdown-menu-separator {
     border-right: 1px grey solid;
+}
+
+.dropdown-list {
+    display: none;
+    background-color: white;
+    border: 3px solid #003E7A;
+    position: absolute;
+}
+
+.dropdown-list:hover {
+    display: block !important;
 }
