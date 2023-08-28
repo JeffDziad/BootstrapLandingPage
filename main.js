@@ -23,7 +23,7 @@ class DropdownMenu {
     //! Find a way to keep bottom border on link when inside either the link or the list.
     //! Bottom border disappears when moving mouse out of the link. hide seems to be called quickly when moving out of the link into the list.
     show() {
-        this.link.style.borderBottom = "8px solid #003E7A";
+        this.list.style.display = "block";
     }
     hide() {
         this.list.style.display = "none";
