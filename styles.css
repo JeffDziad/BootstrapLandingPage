@@ -2,6 +2,10 @@ body {
     margin: 0;
 }
 
+#offcanvasNavbar {
+    background-color: #003E7A;
+}
+
 .header-image {
     display: flex;
     min-height: 315px;
@@ -105,10 +109,10 @@ body {
     border-right: 1px black solid;
 }
 
-.dropdown:hover .dropdown-menu {
-    display: block;
-    margin-top: 0; /* remove the gap so it doesn't close */
-}
+/*.dropdown:hover .dropdown-menu {*/
+/*    display: block;*/
+/*    margin-top: 0; !* remove the gap so it doesn't close *!*/
+/*}*/
 
 .dropdown-menu-right {
     right: 0 !important;
