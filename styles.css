@@ -80,6 +80,10 @@ body {
     box-shadow: inset 0px -8px 0px 0px rgba(0,61,122,1);
 }
 
+.nav-link-option {
+
+}
+
 .nav-list {
     align-self: end;
     height: 80px;
