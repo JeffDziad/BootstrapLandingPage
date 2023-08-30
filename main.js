@@ -1,7 +1,5 @@
 window.onload = init;
 
-addEventListener('resize', setDropdownListPosition);
-
 let menus = [];
 
 class DropdownMenu {
@@ -17,16 +15,33 @@ class DropdownMenu {
         this.list = document.getElementById(this.listId);
         this.startAnchor = document.getElementById(this.startAnchorId).getBoundingClientRect();
         this.endAnchor = document.getElementById(this.endAnchorId).getBoundingClientRect();
-        this.link.onmouseover = this.show.bind(this);
-        this.link.onmouseout = this.hide.bind(this);
+        this.link.onmouseenter = this.showList.bind(this);
+        this.link.onmouseleave = this.hideList.bind(this);
+        this.list.onmouseleave = this.hideList.bind(this);
+        this.list.onmouseenter = this.showBorder.bind(this);
     }
     //! Find a way to keep bottom border on link when inside either the link or the list.
     //! Bottom border disappears when moving mouse out of the link. hide seems to be called quickly when moving out of the link into the list.
-    show() {
+    showList() {
+        closeAllMenus();
         this.list.style.display = "block";
+        this.showBorder();
     }
-    hide() {
+    hideList() {
         this.list.style.display = "none";
+        this.hideBorder();
+    }
+    showBorder() {
+        this.link.style.borderBottom = "#003E7A solid 8px";
+    }
+    hideBorder() {
+        this.link.style.borderBottom = "#003E7A solid 0px";
+    }
+}
+
+function closeAllMenus() {
+    for(const m of menus) {
+        m.hideList();
     }
 }
 
@@ -34,9 +49,15 @@ function setDropdownListPosition() {
     for(const m of menus) {
         m.initialize();
         m.list.style.top = `${m.startAnchor.y + m.startAnchor.height}px`;
-        m.list.style.left = `${m.startAnchor.left-100}px`;
-        m.list.style.right = `${(innerWidth-m.endAnchor.left) - m.endAnchor.width}px`;
+        m.list.style.left = `${m.startAnchor.left-200}px`;
+        let r = m.endAnchor.left + m.endAnchor.width;
+        let w = r - m.list.style.left.split('p')[0];
+        m.list.style.width = `${w}px`;
     }
+}
+
+function mouseLeaveDropdownGroup(e) {
+
 }
 
 function init() {
@@ -48,4 +69,7 @@ function init() {
     setTimeout(() => {
         setDropdownListPosition();
     }, 100);
+
+    addEventListener('resize', setDropdownListPosition);
+    addEventListener('scroll', setDropdownListPosition);
 }

@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    font-family: 'Karla', sans-serif;
 }
 
 #offcanvasNavbar {
@@ -47,12 +48,55 @@ body {
     text-indent: 10px;
 }
 
-.bg-wctc-primary {
-    background-color: #003E7A;
-}
-
 .text-wctc-primary {
     color: #003E7A;
+}
+
+.bg-wctc-primary {
+    background-color: #003e7a;
+}
+
+.wctc-btn-primary {
+    padding: 1rem;
+    border-radius: 0;
+    border: none;
+    background-color: rgba(0, 62, 122, 1);
+}
+.wctc-btn-primary:hover {
+    background-color: rgba(0, 62, 122, 0.8);
+}
+
+.wctc-btn-green {
+    padding: 1rem;
+    border-radius: 0;
+    border: none;
+    background-color: rgba(165, 206, 57, 1);
+}
+.wctc-btn-green:hover {
+    background-color: rgba(165, 206, 57, 0.8);
+}
+
+.wctc-btn-yellow {
+    color: #003E7A;
+    padding: 1rem;
+    border-radius: 0;
+    border: none;
+    background-color: rgba(255, 222, 116, 1);
+}
+.wctc-btn-yellow:hover {
+    background-color: rgba(255, 222, 116, 0.8);
+}
+
+.wctc-btn-special {
+    color: #003E7A;
+    padding: 1rem;
+    border-radius: 0;
+    background-color: rgba(255, 255, 255, 0);
+    border: solid white 2px;
+}
+.wctc-btn-special:hover {
+    border: solid white 2px;
+    background-color: rgba(255, 255, 255, 0.25);
 }
 
 .karla-font {
@@ -75,21 +119,15 @@ body {
 
 .navbar-link {
     cursor: pointer;
-    transition: all 1s;
+    transition: all 0.5s;
     right: 0;
 }
 
-.navbar-link:hover {
-    -webkit-box-shadow: inset 0px -8px 0px 0px rgba(0,61,122,1);
-    -moz-box-shadow: inset 0px -8px 0px 0px rgba(0,61,122,1);
-    box-shadow: inset 0px -8px 0px 0px rgba(0,61,122,1);
-}
-
-.nav-link-option {
+.link-option {
     text-decoration: none;
 }
 
-.nav-link-option:hover {
+.link-option:hover {
     text-decoration: underline;
 }
 
@@ -137,4 +175,34 @@ body {
 
 .dropdown-list:hover {
     display: block !important;
+}
+
+.contact-icon {
+    text-align: center;
+    border-radius: 25px;
+    padding: 10px;
+    width: 36px;
+    background-color: #003E7A;
+    color: white;
+}
+
+.connections-resources {
+    background-image: url("https://www.wctc.edu/_resources/images/NWS-Stripe-Texture.jpg");
+}
+.circle-icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 100px;
+    vertical-align: middle;
+    padding: 30px;
+}
+
+.connections-resources-headers {
+    font-size: 20px;
+}
+
+.footer {
+    background-image: url("https://www.wctc.edu/_resources/images/footer_bg.jpg");
 }
